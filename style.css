@@ -1,0 +1,96 @@
+* {
+    background-color: rgb(84, 85, 85);
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #fff;
+}
+
+div {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+}
+
+.container_calc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculadora{
+    padding: 20px;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    max-width: 300px;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(0, 0, 0, 0.25), inset -5px -5px 15px rgba(0, 0, 0, 0.25),
+    inset 5px 5px 15px rgba(0, 0, 0, 0.25);
+    grid-gap: 10px !important;
+    background-color: #202020;
+}
+
+.calculadora__button {
+    padding: 10px 15px;
+    color: #fff;
+    font-weight: 500;
+    background: linear-gradient(315deg, #2f2f2f, #3f3f3f);
+    box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15),
+      inset 0 -8px 8px rgba(0, 0, 0, 0.25), 0 0 0 2px rgba(0, 0, 0, 0.75),
+      10px 20px 25px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* .calculadora__button__clear {
+    background: #f00;
+    box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15),
+      inset 0 -8px 8px rgba(68, 5, 5, 0.25), 0 0 0 2px rgba(57, 2, 2, 0.75),
+      10px 20px 25px rgba(67, 3, 3, 0.4);
+    border-radius: 5px;
+}
+
+.calculadora__button__igual {
+    background: rgb(38, 181, 143);
+    box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.calculadora__button__clear:hover {
+    background: linear-gradient(90deg, #761d1d, #f7f1f153);
+  border-left: 1px solid #fff4;
+  cursor: pointer;
+  border-bottom: 1px solid #fff4;
+  border-top: 1px solid #fff4;
+} */
+
+.calculadora__resultado {
+    grid-column: 1 / span 4;
+    text-align: end;
+    padding: 0.5rem;
+    background-color: #a7af7c;
+    border-radius: 10px;
+    text-align: right;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.75);
+}
+
+.calculadora__button:hover {
+    cursor: pointer;
+    background: linear-gradient(90deg, #2d2d2d, #4d4d4d);
+    box-shadow: -5px -5px 15px rgba(0, 0, 0, 0.1),
+      10px 5px 10px rgba(0, 0, 0, 0.15);
+    border-left: 1px solid #0004;
+    border-bottom: 1px solid #0004;
+    border-top: 1px solid #0009;
+}
